@@ -13,6 +13,7 @@
         <module>artemis-parent</module>
         <module>artemis-polygon</module>
         <module>artemis-model</module>
+        <module>artemis-common</module>
     </modules>
 
 </project>

@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="develop 0.0.1 --&gt; Polygon and Model submodules added.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-common/src/main/java/org/artemis/artemiscommon/polygon/PolygonEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-common/src/main/java/org/artemis/artemiscommon/utils/ApproximationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-common/src/main/java/org/artemis/artemiscommon/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-common/src/main/java/org/artemis/artemiscommon/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/config/PolygonBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/ArtemisPolygonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/ArtemisPolygonApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/rest/PolygonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/rest/PolygonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/artemis/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -90,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677186482848</updated>
       <workItem from="1677186484271" duration="1976000" />
-      <workItem from="1677188515305" duration="38000" />
+      <workItem from="1677188515305" duration="5895000" />
     </task>
     <task id="LOCAL-00001" summary="ver 0.0 --&gt; Init project.">
       <created>1677186643953</created>
@@ -106,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677188249127</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="develop 0.0.1 --&gt; Polygon and Model submodules added.">
+      <created>1677188721753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677188721753</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

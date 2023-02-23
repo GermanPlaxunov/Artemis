@@ -1,0 +1,9 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /polygon
+
+polygon:
+  api:
+    key: ${POLYGON_API_KEY:8foaHdO0UWBdpeY455d58BI8Df_kL9mv}
+    url: ${POLYGON_API_URL:https://api.polygon.io/}
