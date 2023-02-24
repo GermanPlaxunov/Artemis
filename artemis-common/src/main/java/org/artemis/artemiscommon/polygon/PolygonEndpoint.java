@@ -1,82 +1,102 @@
 package org.artemis.artemiscommon.polygon;
 
+import org.artemis.artemiscommon.utils.Utils;
+
 public enum PolygonEndpoint {
     /**
      * Get aggregate bars for a stock over a given
      * date range in custom time window sizes.
      */
-    POLYGON_ENDPOINT_AGGREGATES("v2/aggs/ticker/{stocksTicker}/range/{multiplier}/{timespan}/{from}/{to}"),
+    POLYGON_ENDPOINT_AGGREGATES("p1", "v2/aggs/ticker/{stocksTicker}/range/{multiplier}/{timespan}/{from}/{to}"),
     /**
      * Get the daily open, high, low, and close
      * (OHLC) for the entire stocks/equities markets.
      */
-    POLYGON_ENDPOINT_DAILY_OHLC("/v2/aggs/grouped/locale/us/market/stocks/{date}"),
+    POLYGON_ENDPOINT_DAILY_OHLC("p2", "/v2/aggs/grouped/locale/us/market/stocks/{date}"),
     /**
      * Get the open, close and afterhours prices of
      * a stock symbol on a certain date.
      */
-    POLYGON_ENDPOINT_DAILY_OPEN_CLOSE("/v1/open-close/{stocksTicker}/{date}"),
+    POLYGON_ENDPOINT_DAILY_OPEN_CLOSE("p3", "/v1/open-close/{stocksTicker}/{date}"),
     /**
      * Get the previous day's open, high, low, and
      * close (OHLC) for the specified stock ticker.
      */
-    POLYGON_ENDPOINT_PREVIOUS_OHLC("/v2/aggs/ticker/{stocksTicker}/prev"),
+    POLYGON_ENDPOINT_PREVIOUS_OHLC("p4", "/v2/aggs/ticker/{stocksTicker}/prev"),
     /**
      * Get the simple moving average (SMA) for
      * a ticker symbol over a given time range.
      */
-    POLYGON_ENDPOINT_TECHNICAL_INDICATOR_SMA("/v1/indicators/sma/{stockTicker}"),
+    POLYGON_ENDPOINT_TECHNICAL_INDICATOR_SMA("p5", "/v1/indicators/sma/{stockTicker}"),
     /**
      * Get the exponential moving average (EMA)
      * for a ticker symbol over a given time range.
      */
-    POLYGON_ENDPOINT_TECHNICAL_INDICATOR_EMA("/v1/indicators/ema/{stockTicker}"),
+    POLYGON_ENDPOINT_TECHNICAL_INDICATOR_EMA("p6", "/v1/indicators/ema/{stockTicker}"),
     /**
      * Get moving average convergence/divergence (MACD)
      * data for a ticker symbol over a given time range.
      */
-    POLYGON_ENDPOINT_TECHNICAL_INDICATOR_MACD("/v1/indicators/macd/{stockTicker}"),
+    POLYGON_ENDPOINT_TECHNICAL_INDICATOR_MACD("p7", "/v1/indicators/macd/{stockTicker}"),
     /**
      * Get the relative strength index (RSI) for
      * a ticker symbol over a given time range.
      */
-    POLYGON_ENDPOINT_TECHNICAL_INDICATOR_RSI("/v1/indicators/rsi/{stockTicker}");
+    POLYGON_ENDPOINT_TECHNICAL_INDICATOR_RSI("p8", "/v1/indicators/rsi/{stockTicker}");
 
-    private final String name;
+    private final String code;
+    private final String endpoint;
 
-    PolygonEndpoint(String name) {
-        this.name = name;
+    PolygonEndpoint(String code, String endpoint) {
+        this.code = code;
+        this.endpoint = endpoint;
+    }
+
+    public static boolean isDataCode(String code) {
+        return Utils.in(code,
+                POLYGON_ENDPOINT_AGGREGATES.code,
+                POLYGON_ENDPOINT_DAILY_OHLC.code,
+                POLYGON_ENDPOINT_PREVIOUS_OHLC.code,
+                POLYGON_ENDPOINT_DAILY_OPEN_CLOSE.code);
+    }
+
+    public static boolean isSignalCode(String code) {
+        return Utils.in(code,
+                POLYGON_ENDPOINT_TECHNICAL_INDICATOR_RSI.code,
+                POLYGON_ENDPOINT_TECHNICAL_INDICATOR_SMA.code,
+                POLYGON_ENDPOINT_TECHNICAL_INDICATOR_EMA.code,
+                POLYGON_ENDPOINT_TECHNICAL_INDICATOR_MACD.code);
     }
 
     public static String getAggregate() {
-        return POLYGON_ENDPOINT_AGGREGATES.name;
+        return POLYGON_ENDPOINT_AGGREGATES.code;
     }
 
     public static String getDailyOhlc() {
-        return POLYGON_ENDPOINT_DAILY_OHLC.name;
+        return POLYGON_ENDPOINT_DAILY_OHLC.code;
     }
 
     public static String getDailyOpenClose() {
-        return POLYGON_ENDPOINT_DAILY_OPEN_CLOSE.name;
+        return POLYGON_ENDPOINT_DAILY_OPEN_CLOSE.code;
     }
 
     public static String getPreviousOhlc() {
-        return POLYGON_ENDPOINT_PREVIOUS_OHLC.name;
+        return POLYGON_ENDPOINT_PREVIOUS_OHLC.code;
     }
 
     public static String getSma() {
-        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_SMA.name;
+        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_SMA.code;
     }
 
     public static String getEma() {
-        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_EMA.name;
+        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_EMA.code;
     }
 
     public static String getMacd() {
-        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_MACD.name;
+        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_MACD.code;
     }
 
     public static String getRsi() {
-        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_RSI.name;
+        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_RSI.code;
     }
 }
