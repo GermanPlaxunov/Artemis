@@ -68,35 +68,76 @@ public enum PolygonEndpoint {
                 POLYGON_ENDPOINT_TECHNICAL_INDICATOR_MACD.code);
     }
 
+    public static PolygonEndpoint getFromString(String name) {
+        for(var code : PolygonEndpoint.values()){
+            if(code.code.equals(name)){
+                return code;
+            }
+        }
+        return null;
+    }
+
     public static String getAggregate() {
         return POLYGON_ENDPOINT_AGGREGATES.code;
+    }
+
+    public static boolean isAggregate(String code) {
+        return POLYGON_ENDPOINT_AGGREGATES.code.equals(code);
     }
 
     public static String getDailyOhlc() {
         return POLYGON_ENDPOINT_DAILY_OHLC.code;
     }
 
+    public static boolean isDailyOhlc(String code) {
+        return POLYGON_ENDPOINT_DAILY_OHLC.code.equals(code);
+    }
+
     public static String getDailyOpenClose() {
         return POLYGON_ENDPOINT_DAILY_OPEN_CLOSE.code;
+    }
+
+    public static boolean isDailyOpenClose(String code) {
+        return POLYGON_ENDPOINT_DAILY_OPEN_CLOSE.code.equals(code);
     }
 
     public static String getPreviousOhlc() {
         return POLYGON_ENDPOINT_PREVIOUS_OHLC.code;
     }
 
+    public static boolean isPreviousOhlc(String code) {
+        return POLYGON_ENDPOINT_PREVIOUS_OHLC.code.equals(code);
+    }
+
     public static String getSma() {
         return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_SMA.code;
+    }
+
+    public static boolean isSma(String code) {
+        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_SMA.code.equals(code);
     }
 
     public static String getEma() {
         return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_EMA.code;
     }
 
+    public static boolean isEma(String code) {
+        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_EMA.code.equals(code);
+    }
+
     public static String getMacd() {
         return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_MACD.code;
     }
 
+    public static boolean isMacd(String code) {
+        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_MACD.code.equals(code);
+    }
+
     public static String getRsi() {
         return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_RSI.code;
+    }
+
+    public static boolean isRsi(String code) {
+        return POLYGON_ENDPOINT_TECHNICAL_INDICATOR_RSI.code.equals(code);
     }
 }
