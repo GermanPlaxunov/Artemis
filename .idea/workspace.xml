@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="develop 0.0.3 --&gt; Polygon request sender added." />
+    <list default="true" id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="develop 0.0.5 --&gt; Indicator and Data response model added.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +105,8 @@
       <workItem from="1677188515305" duration="6008000" />
       <workItem from="1677223418064" duration="4389000" />
       <workItem from="1677237298592" duration="2833000" />
+      <workItem from="1677268075332" duration="2733000" />
+      <workItem from="1677321941054" duration="4139000" />
     </task>
     <task id="LOCAL-00001" summary="ver 0.0 --&gt; Init project.">
       <created>1677186643953</created>
@@ -139,7 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677240176862</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="develop 0.0.4 --&gt; Polygon request sender added.">
+      <created>1677270294678</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677270294678</updated>
+    </task>
+    <task id="LOCAL-00007" summary="develop 0.0.5 --&gt; Indicator and Data response model added.">
+      <created>1677326473765</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677326473765</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +183,8 @@
     <MESSAGE value="develop 0.0.1 --&gt; Polygon and Model submodules added." />
     <MESSAGE value="develop 0.0.2 --&gt; Polygon client added." />
     <MESSAGE value="develop 0.0.3 --&gt; Polygon request sender added." />
-    <option name="LAST_COMMIT_MESSAGE" value="develop 0.0.3 --&gt; Polygon request sender added." />
+    <MESSAGE value="develop 0.0.4 --&gt; Polygon beans added." />
+    <MESSAGE value="develop 0.0.5 --&gt; Indicator and Data response model added." />
+    <option name="LAST_COMMIT_MESSAGE" value="develop 0.0.5 --&gt; Indicator and Data response model added." />
   </component>
 </project>

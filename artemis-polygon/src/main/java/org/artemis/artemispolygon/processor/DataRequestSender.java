@@ -2,6 +2,10 @@ package org.artemis.artemispolygon.processor;
 
 import lombok.RequiredArgsConstructor;
 import org.artemis.artemismodel.polygon.PolygonDataRequest;
+import org.artemis.artemismodel.polygon.response.AggregateResponse;
+import org.artemis.artemismodel.polygon.response.DailyOpenCloseResponse;
+import org.artemis.artemismodel.polygon.response.DailyPreviousClose;
+import org.artemis.artemismodel.polygon.response.DailyResponse;
 import org.artemis.artemispolygon.client.PolygonClient;
 
 import static org.artemis.artemiscommon.utils.DateUtils.convertLocalDateTimeToString;
@@ -11,7 +15,7 @@ public class DataRequestSender {
     private final String apiKey;
     private final PolygonClient client;
 
-    public String requestAggregate(PolygonDataRequest request) {
+    public AggregateResponse requestAggregate(PolygonDataRequest request) {
         var stockTicker = request.getStockTicker();
         var multiplier = request.getMultiplier();
         var timespan = request.getTimespan();
@@ -24,21 +28,21 @@ public class DataRequestSender {
                 from, to, adjusted, sort, limit, apiKey);
     }
 
-    public String requestDailyOhlc(PolygonDataRequest request) {
+    public DailyResponse requestDailyOhlc(PolygonDataRequest request) {
         var date = convertLocalDateTimeToString(request.getDate());
         var adjusted = request.getAdjusted();
         var includeOtc = request.getIncludeOtc();
         return client.requestDaily(date, adjusted, includeOtc, apiKey);
     }
 
-    public String requestDailyOpenClose(PolygonDataRequest request) {
+    public DailyOpenCloseResponse requestDailyOpenClose(PolygonDataRequest request) {
         var stockTicker = request.getStockTicker();
         var date = convertLocalDateTimeToString(request.getDate());
         var adjusted = request.getAdjusted();
         return client.requestDailyOpenClose(stockTicker, date, adjusted, apiKey);
     }
 
-    public String requestPreviousOhlc(PolygonDataRequest request) {
+    public DailyPreviousClose requestPreviousOhlc(PolygonDataRequest request) {
         var stockTicker = request.getStockTicker();
         var adjusted = request.getAdjusted();
         return client.requestPreviousDaily(stockTicker, adjusted, apiKey);

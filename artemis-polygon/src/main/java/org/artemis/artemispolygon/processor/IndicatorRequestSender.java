@@ -2,6 +2,7 @@ package org.artemis.artemispolygon.processor;
 
 import lombok.RequiredArgsConstructor;
 import org.artemis.artemismodel.polygon.PolygonIndicatorRequest;
+import org.artemis.artemismodel.polygon.response.IndicatorResponse;
 import org.artemis.artemispolygon.client.PolygonClient;
 
 import static org.artemis.artemiscommon.utils.DateUtils.convertLocalDateTimeToString;
@@ -11,7 +12,7 @@ public class IndicatorRequestSender {
     private final String apiKey;
     private final PolygonClient client;
 
-    public String requestSma(PolygonIndicatorRequest request) {
+    public IndicatorResponse requestSma(PolygonIndicatorRequest request) {
         var stockTicker = request.getStockTicker();
         var timestamp = convertLocalDateTimeToString(request.getTimestamp());
         var timespan = request.getTimespan();
@@ -26,7 +27,7 @@ public class IndicatorRequestSender {
                 order, limit, apiKey);
     }
 
-    public String requestEma(PolygonIndicatorRequest request) {
+    public IndicatorResponse requestEma(PolygonIndicatorRequest request) {
         var stockTicker = request.getStockTicker();
         var timestamp = convertLocalDateTimeToString(request.getTimestamp());
         var timespan = request.getTimespan();
@@ -41,7 +42,7 @@ public class IndicatorRequestSender {
                 order, limit, apiKey);
     }
 
-    public String requestMacd(PolygonIndicatorRequest request) {
+    public IndicatorResponse requestMacd(PolygonIndicatorRequest request) {
         var stockTicker = request.getStockTicker();
         var timestamp = convertLocalDateTimeToString(request.getTimestamp());
         var timespan = request.getTimespan();
@@ -58,7 +59,7 @@ public class IndicatorRequestSender {
                 seriesType, expandUnderlying, order, limit, apiKey);
     }
 
-    public String requestRsi(PolygonIndicatorRequest request) {
+    public IndicatorResponse requestRsi(PolygonIndicatorRequest request) {
         var stockTicker = request.getStockTicker();
         var timestamp = convertLocalDateTimeToString(request.getTimestamp());
         var timespan = request.getTimespan();
