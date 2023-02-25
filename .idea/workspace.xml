@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="develop 0.0.5 --&gt; Indicator and Data response model added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/AggregateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/AggregateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyOpenCloseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyOpenCloseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyPreviousClose.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyPreviousClose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/IndexResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/IndexResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/TradeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/TradeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-parent/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +87,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="develop" />
+    </force-push-targets>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean compile" />
@@ -107,6 +120,7 @@
       <workItem from="1677237298592" duration="2833000" />
       <workItem from="1677268075332" duration="2733000" />
       <workItem from="1677321941054" duration="4139000" />
+      <workItem from="1677340179233" duration="1829000" />
     </task>
     <task id="LOCAL-00001" summary="ver 0.0 --&gt; Init project.">
       <created>1677186643953</created>
@@ -157,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677326473765</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="develop 0.0.5 --&gt; Indicator and Data response model added.">
+      <created>1677340214558</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677340214558</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
