@@ -64,6 +64,11 @@
             <artifactId>artemis-model</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.artemis</groupId>
+            <artifactId>artemis-data</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -24,6 +24,6 @@ public class IndexValues {
     /***
      * The indicator value for this period.
      */
-    @JsonProperty("number")
-    private Double number;
+    @JsonProperty("value")
+    private Double value;
 }

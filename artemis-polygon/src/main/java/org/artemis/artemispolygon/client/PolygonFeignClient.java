@@ -1,12 +1,14 @@
 package org.artemis.artemispolygon.client;
 
 import org.artemis.artemismodel.polygon.response.*;
+import org.artemis.artemispolygon.config.PolygonClientConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "polygonClient", url = "${polygon.api.url}")
+@FeignClient(name = "polygonClient", url = "${polygon.api.url}",
+configuration = PolygonClientConfig.class)
 public interface PolygonFeignClient extends PolygonClient {
 
     @Override

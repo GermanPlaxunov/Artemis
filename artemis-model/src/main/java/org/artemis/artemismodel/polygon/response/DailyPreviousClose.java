@@ -11,7 +11,7 @@ public class DailyPreviousClose {
      * The exchange symbol that this item is traded under.
      */
     @JsonProperty("ticker")
-    private String ticker;
+    private String symbol;
     /**
      * Whether this response was adjusted for splits.
      * */

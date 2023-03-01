@@ -3,8 +3,6 @@ package org.artemis.artemismodel.polygon.response;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.util.List;
-
 @Data
 public class IndicatorResponse {
     /***
@@ -24,5 +22,5 @@ public class IndicatorResponse {
      * Index data.
      */
     @JsonProperty("results")
-    private List<IndexResult> results;
+    private IndexResult results;
 }

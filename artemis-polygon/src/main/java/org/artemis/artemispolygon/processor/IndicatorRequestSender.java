@@ -13,7 +13,7 @@ public class IndicatorRequestSender {
     private final PolygonClient client;
 
     public IndicatorResponse requestSma(PolygonIndicatorRequest request) {
-        var stockTicker = request.getStockTicker();
+        var stockTicker = request.getSymbol();
         var timestamp = convertLocalDateTimeToString(request.getTimestamp());
         var timespan = request.getTimespan();
         var adjusted = request.getAdjusted();
@@ -28,7 +28,7 @@ public class IndicatorRequestSender {
     }
 
     public IndicatorResponse requestEma(PolygonIndicatorRequest request) {
-        var stockTicker = request.getStockTicker();
+        var stockTicker = request.getSymbol();
         var timestamp = convertLocalDateTimeToString(request.getTimestamp());
         var timespan = request.getTimespan();
         var adjusted = request.getAdjusted();
@@ -43,7 +43,7 @@ public class IndicatorRequestSender {
     }
 
     public IndicatorResponse requestMacd(PolygonIndicatorRequest request) {
-        var stockTicker = request.getStockTicker();
+        var stockTicker = request.getSymbol();
         var timestamp = convertLocalDateTimeToString(request.getTimestamp());
         var timespan = request.getTimespan();
         var adjusted = request.getAdjusted();
@@ -60,7 +60,7 @@ public class IndicatorRequestSender {
     }
 
     public IndicatorResponse requestRsi(PolygonIndicatorRequest request) {
-        var stockTicker = request.getStockTicker();
+        var stockTicker = request.getSymbol();
         var timestamp = convertLocalDateTimeToString(request.getTimestamp());
         var timespan = request.getTimespan();
         var adjusted = request.getAdjusted();

@@ -15,7 +15,7 @@ public class PolygonIndicatorRequest {
      * The ticker symbol for which to get
      * simple moving average (SMA) data.
      */
-    private String stockTicker;
+    private String symbol;
     /**
      * Query by timestamp. Either a date with the
      * format YYYY-MM-DD or a millisecond timestamp.

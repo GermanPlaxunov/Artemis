@@ -45,7 +45,7 @@ public class DailyOpenCloseResponse {
      * The open price of the ticker symbol in pre-market trading.
      */
     @JsonProperty("preMarket")
-    private Integer preMarket;
+    private Double preMarket;
     /**
      * The status of this request's response.
      */
@@ -60,5 +60,5 @@ public class DailyOpenCloseResponse {
      * The trading volume of the symbol in the given time period.
      */
     @JsonProperty("volume")
-    private Double volume;
+    private Long volume;
 }

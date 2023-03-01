@@ -4,16 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="develop 0.0.5 --&gt; Indicator and Data response model added.">
+    <list default="true" id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="develop 0.0.6 --&gt; JsonProperty added.">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-common/src/main/java/org/artemis/artemiscommon/polygon/IndicatorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/entities/EndOfDayEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/entities/IndicatorEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/repository/EndOfDayRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/repository/IndicatorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/service/impl/EndOfDayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/service/impl/IndicatorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/service/interfaces/EndOfDayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/service/interfaces/IndicatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/config/PolygonClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/AggregateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/AggregateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-common/src/main/java/org/artemis/artemiscommon/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-common/src/main/java/org/artemis/artemiscommon/utils/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/PolygonIndicatorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/PolygonIndicatorRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyOpenCloseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyOpenCloseResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyPreviousClose.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyPreviousClose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/DailyResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/IndexResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/IndexResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/IndexValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/IndexValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/IndicatorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/IndicatorResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/TradeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/TradeData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artemis-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/ArtemisPolygonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/ArtemisPolygonApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/config/PolygonBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/config/PolygonBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorRequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorRequestSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/PolygonProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/PolygonProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +49,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -69,24 +95,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;cdd8369256af5c39a5973b9944169ddb&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "50879b0b55192c31ab09cdfa48a98913",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="develop" />
@@ -120,7 +157,10 @@
       <workItem from="1677237298592" duration="2833000" />
       <workItem from="1677268075332" duration="2733000" />
       <workItem from="1677321941054" duration="4139000" />
-      <workItem from="1677340179233" duration="1829000" />
+      <workItem from="1677340179233" duration="3140000" />
+      <workItem from="1677359384767" duration="7214000" />
+      <workItem from="1677606908339" duration="214000" />
+      <workItem from="1677615101332" duration="8931000" />
     </task>
     <task id="LOCAL-00001" summary="ver 0.0 --&gt; Init project.">
       <created>1677186643953</created>
@@ -178,11 +218,27 @@
       <option name="project" value="LOCAL" />
       <updated>1677340214558</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="develop 0.0.6 --&gt; JsonProperty added.">
+      <created>1677349782972</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677349782972</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.xml.ws:jakarta.xml.ws-api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -206,6 +262,7 @@
     <MESSAGE value="develop 0.0.3 --&gt; Polygon request sender added." />
     <MESSAGE value="develop 0.0.4 --&gt; Polygon beans added." />
     <MESSAGE value="develop 0.0.5 --&gt; Indicator and Data response model added." />
-    <option name="LAST_COMMIT_MESSAGE" value="develop 0.0.5 --&gt; Indicator and Data response model added." />
+    <MESSAGE value="develop 0.0.6 --&gt; JsonProperty added." />
+    <option name="LAST_COMMIT_MESSAGE" value="develop 0.0.6 --&gt; JsonProperty added." />
   </component>
 </project>
