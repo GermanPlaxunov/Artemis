@@ -15,6 +15,7 @@
         <module>artemis-model</module>
         <module>artemis-common</module>
         <module>artemis-data</module>
+        <module>artemis-gate</module>
     </modules>
 
 </project>
