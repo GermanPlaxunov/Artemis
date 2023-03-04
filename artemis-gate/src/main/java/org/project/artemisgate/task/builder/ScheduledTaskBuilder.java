@@ -11,21 +11,12 @@ import java.util.Optional;
 public class ScheduledTaskBuilder {
 
     public TriggeredTask buildTriggeredTask(long interval) {
-        var runnable = new Runnable() {
-            @Override
-            public void run() {
-                log.info("Task launched");
-            }
-        };
-        var trigger = new Trigger() {
-            @Override
-            public Instant nextExecution(TriggerContext triggerContext) {
-                var lastExecTime = Optional.ofNullable(triggerContext)
-                        .map(TriggerContext::lastActualExecution)
-                        .orElse(Instant.now());
-                var nextExecTime = lastExecTime.plusMillis(interval);
-                return nextExecTime;
-            }
+        Runnable runnable = ()-> log.info("Task launched");
+        Trigger trigger = triggerContext -> {
+            var lastExecTime = Optional.ofNullable(triggerContext)
+                    .map(TriggerContext::lastActualExecution)
+                    .orElse(Instant.now());
+            return lastExecTime.plusMillis(interval);
         };
         return new TriggeredTask(runnable, trigger);
     }

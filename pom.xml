@@ -16,6 +16,7 @@
         <module>artemis-common</module>
         <module>artemis-data</module>
         <module>artemis-gate</module>
+        <module>sonar-report</module>
     </modules>
 
 </project>

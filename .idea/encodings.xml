@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/artemis-parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/artemis-polygon/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/artemis-polygon/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sonar-report/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sonar-report/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
