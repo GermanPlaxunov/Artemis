@@ -13,4 +13,11 @@
 
     <artifactId>artemis-common</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
