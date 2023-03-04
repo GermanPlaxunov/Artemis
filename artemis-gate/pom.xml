@@ -53,6 +53,11 @@
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.artemis</groupId>
+            <artifactId>artemis-data</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
