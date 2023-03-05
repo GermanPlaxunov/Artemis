@@ -10,7 +10,8 @@
         <relativePath>../artemis-parent</relativePath>
     </parent>
 
-    <artifactId>artemis-gate</artifactId>
+    <artifactId>artemis-core</artifactId>
+    <version>1.0</version>
 
     <dependencies>
         <dependency>

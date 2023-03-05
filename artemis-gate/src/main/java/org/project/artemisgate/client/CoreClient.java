@@ -1,6 +1,10 @@
 package org.project.artemisgate.client;
 
+import org.artemis.artemismodel.task.AnalyzeDataTask;
+import org.artemis.artemismodel.task.UploadDataTask;
+
 public interface CoreClient {
 
-    void processScheduledTask(String symbol, Long interval);
+    void processDataTask(UploadDataTask uploadDataTask);
+    void processAnalyzeTask(AnalyzeDataTask analyzeDataTask);
 }

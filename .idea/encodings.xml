@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/artemis-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/artemis-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/artemis-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/artemis-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/artemis-data/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/artemis-data/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/artemis-gate/src/main/java" charset="UTF-8" />
