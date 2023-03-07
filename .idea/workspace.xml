@@ -4,119 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="develop 0.2.1 --&gt; Core client added.">
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/client/PolygonClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/client/PolygonFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/config/CoreBeansConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/config/CoreDaoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/core/processor/CoreProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/rest/CoreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/dto/AnalyzeTaskDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/entities/AnalyzeDataTaskEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/repository/AnalyzeDataTaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/service/impl/AnalyzeDataTaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/polygon/service/interfaces/AnalyzeDataTaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/config/GateBeansConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/task/mapper/AnalyzeDataTaskMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/task/mapper/UploadDataTaskMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/task/AnalyzeDataTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/task/UploadDataTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gate-api.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-gate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-gate/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/client/CoreClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/client/CoreClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/client/CoreFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/client/CoreFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/config/BeansConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/config/SchedulingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/config/SchedulingConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/processor/GateProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/processor/GateProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/rest/GateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/rest/GateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/task/builder/ScheduledTaskBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-gate/src/main/java/org/project/artemisgate/task/builder/TriggerTaskBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/rest/PolygonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/rest/PolygonController.java" afterDir="false" />
-    <list default="true" id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="develop 0.2.1 --&gt; Core client added.">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/ArtemisCoreApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/test/java/com/project/artemiscore/ArtemisCoreApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/AggregateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/AggregateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/TradeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/TradeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataRequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataRequestSender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/artemis-gate">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
+        <option value="HTTP Request" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="SOFT" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="07d410c9-ebd5-40b5-abca-ea6fbe3293c8" />
-        <option name="url" value="https://github.com/GermanPlaxunov/Artemis.git" />
-      </UrlAndAccount>
-    </option>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2M9j1s0h6FunZ3iDZJ8ayyNJ0td" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="2Mebw0vssSOiEjWvDD0r81MlKAu" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -125,44 +48,22 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;727755180c5555ff768869a4f8428bd0&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
-    ]
   }
 }</component>
-  <component name="Push.Settings">
-    <force-push-targets>
-      <force-push-target remote-path="origin" branch="develop" />
-    </force-push-targets>
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.project.artemisgate.client" />
-    </key>
-  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean compile" />
@@ -175,158 +76,77 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ArtemisCoreApplication">
-    <configuration name="ArtemisCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager" selected="HTTP Request.gate-api | Request data from polygon">
+    <configuration name="gate-api | Request data from polygon" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gate-api.http" index="2" requestIdentifier="Request data from polygon" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="gate-api | Send POST request with json body" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gate-api.http" requestIdentifier="Send POST request with json body" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ArtemisCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="artemis-core" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.artemiscore.ArtemisCoreApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.artemiscore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArtemisCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="artemis-core" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.artemiscore.ArtemisCoreApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArtemisGateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="ArtemisGateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="artemis-gate" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.project.artemisgate.ArtemisGateApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.project.artemisgate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArtemisPolygonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="ArtemisPolygonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="artemis-polygon" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.artemis.artemispolygon.ArtemisPolygonApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.artemis.artemispolygon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.gate-api | Request data from polygon" />
+        <item itemvalue="Spring Boot.ArtemisPolygonApplication" />
+        <item itemvalue="Spring Boot.ArtemisGateApplication" />
+        <item itemvalue="Spring Boot.ArtemisCoreApplication" />
+        <item itemvalue="HTTP Request.gate-api | Send POST request with json body" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd122cdb-4564-4a1e-b60b-edd77b725e03" name="Changes" comment="" />
-      <created>1677186482848</created>
+      <changelist id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="" />
+      <created>1678131242344</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677186482848</updated>
-      <workItem from="1677186484271" duration="1976000" />
-      <workItem from="1677188515305" duration="6008000" />
-      <workItem from="1677223418064" duration="4389000" />
-      <workItem from="1677237298592" duration="2833000" />
-      <workItem from="1677268075332" duration="2733000" />
-      <workItem from="1677321941054" duration="4139000" />
-      <workItem from="1677340179233" duration="3140000" />
-      <workItem from="1677359384767" duration="7214000" />
-      <workItem from="1677606908339" duration="214000" />
-      <workItem from="1677615101332" duration="8931000" />
-      <workItem from="1677877418714" duration="4428000" />
-      <workItem from="1677883598882" duration="2998000" />
-      <workItem from="1677966526669" duration="6853000" />
-      <workItem from="1678034842171" duration="3270000" />
-      <workItem from="1678045957592" duration="2103000" />
+      <updated>1678131242344</updated>
+      <workItem from="1678131243900" duration="4783000" />
+      <workItem from="1678224836560" duration="1102000" />
     </task>
-    <task id="LOCAL-00001" summary="ver 0.0 --&gt; Init project.">
-      <created>1677186643953</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1677186643953</updated>
-    </task>
-    <task id="LOCAL-00002" summary="develop 0.0.1 --&gt; Polygon and Model submodules added.">
-      <created>1677188249127</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1677188249127</updated>
-    </task>
-    <task id="LOCAL-00003" summary="develop 0.0.1 --&gt; Polygon and Model submodules added.">
-      <created>1677188721753</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1677188721753</updated>
-    </task>
-    <task id="LOCAL-00004" summary="develop 0.0.2 --&gt; Polygon client added.">
-      <created>1677194512945</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1677194512945</updated>
-    </task>
-    <task id="LOCAL-00005" summary="develop 0.0.3 --&gt; Polygon request sender added.">
-      <created>1677240176862</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1677240176862</updated>
-    </task>
-    <task id="LOCAL-00006" summary="develop 0.0.4 --&gt; Polygon request sender added.">
-      <created>1677270294678</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1677270294678</updated>
-    </task>
-    <task id="LOCAL-00007" summary="develop 0.0.5 --&gt; Indicator and Data response model added.">
-      <created>1677326473765</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1677326473765</updated>
-    </task>
-    <task id="LOCAL-00008" summary="develop 0.0.5 --&gt; Indicator and Data response model added.">
-      <created>1677340214558</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1677340214558</updated>
-    </task>
-    <task id="LOCAL-00009" summary="develop 0.0.6 --&gt; JsonProperty added.">
-      <created>1677349782972</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1677349782972</updated>
-    </task>
-    <task id="LOCAL-00010" summary="develop 0.1.1 --&gt; Artemis-gate added + scheduled config.">
-      <created>1677882641299</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1677882641299</updated>
-    </task>
-    <task id="LOCAL-00011" summary="develop 0.1.2 --&gt; Jacoco config added.">
-      <created>1677925797889</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1677925797889</updated>
-    </task>
-    <task id="LOCAL-00012" summary="develop 0.2.1 --&gt; Core client added.">
-      <created>1677945552254</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1677945552254</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
-    <option featureType="dependencySupport" implementationName="java:jakarta.xml.ws:jakarta.xml.ws-api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -338,25 +158,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/artemis-polygon" />
-      <path value="$PROJECT_DIR$/artemis-gate" />
-      <path value="$PROJECT_DIR$/artemis-core" />
-    </ignored-roots>
-    <MESSAGE value="ver 0.0 --&gt; Init project." />
-    <MESSAGE value="develop 0.0.1 --&gt; Polygon and Model submodules added." />
-    <MESSAGE value="develop 0.0.2 --&gt; Polygon client added." />
-    <MESSAGE value="develop 0.0.3 --&gt; Polygon request sender added." />
-    <MESSAGE value="develop 0.0.4 --&gt; Polygon beans added." />
-    <MESSAGE value="develop 0.0.5 --&gt; Indicator and Data response model added." />
-    <MESSAGE value="develop 0.0.6 --&gt; JsonProperty added." />
-    <MESSAGE value="develop 0.1.1 --&gt; Artemis-gate added + scheduled config." />
-    <MESSAGE value="develop 0.1.2 --&gt; Jacoco config added." />
-    <MESSAGE value="develop 0.2.1 --&gt; Jacoco config added." />
-    <MESSAGE value="develop 0.2.1 --&gt; Core client added." />
-    <option name="LAST_COMMIT_MESSAGE" value="develop 0.2.1 --&gt; Core client added." />
   </component>
 </project>

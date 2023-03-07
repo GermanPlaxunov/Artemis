@@ -25,7 +25,8 @@ public class DataRequestSender {
         var sort = request.getSort();
         var limit = request.getLimit();
         return client.requestAggregates(stockTicker, multiplier, timespan,
-                from, to, adjusted, sort, limit, apiKey);
+                        from, to, adjusted, sort, limit, apiKey)
+                .getBody();
     }
 
     public DailyResponse requestDailyOhlc(PolygonDataRequest request) {

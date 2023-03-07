@@ -1,27 +1,26 @@
 package org.artemis.artemispolygon.client;
 
 import org.artemis.artemismodel.polygon.response.*;
-import org.artemis.artemispolygon.config.PolygonClientConfig;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "polygonClient", url = "${polygon.api.url}",
-configuration = PolygonClientConfig.class)
+@FeignClient(name = "polygonClient", url = "${polygon.api.url}")
 public interface PolygonFeignClient extends PolygonClient {
 
     @Override
     @GetMapping(path = "/v2/aggs/ticker/{stocksTicker}/range/{multiplier}/{timespan}/{from}/{to}")
-    AggregateResponse requestAggregates(@PathVariable("stocksTicker") String stocksTicker,
-                                        @PathVariable("multiplier") int multiplier,
-                                        @PathVariable("timespan") String timespan,
-                                        @PathVariable("from") String from,
-                                        @PathVariable("to") String to,
-                                        @RequestParam("adjusted") boolean adjusted,
-                                        @RequestParam("sort") String sort,
-                                        @RequestParam("limit") int limit,
-                                        @RequestParam("apiKey") String apiKey);
+    ResponseEntity<AggregateResponse> requestAggregates(@PathVariable("stocksTicker") String stocksTicker,
+                                                        @PathVariable("multiplier") int multiplier,
+                                                        @PathVariable("timespan") String timespan,
+                                                        @PathVariable("from") String from,
+                                                        @PathVariable("to") String to,
+                                                        @RequestParam("adjusted") boolean adjusted,
+                                                        @RequestParam("sort") String sort,
+                                                        @RequestParam("limit") int limit,
+                                                        @RequestParam("apiKey") String apiKey);
 
     @Override
     @GetMapping(path = "/v2/aggs/grouped/locale/us/market/stocks/{date}")

@@ -1,13 +1,14 @@
 package org.artemis.artemispolygon.client;
 
 import org.artemis.artemismodel.polygon.response.*;
+import org.springframework.http.ResponseEntity;
 
 public interface PolygonClient {
 
-    AggregateResponse requestAggregates(String stocksTicker, int multiplier,
-                                        String timespan, String from, String to,
-                                        boolean adjusted, String sort, int limit,
-                                        String apiKey);
+    ResponseEntity<AggregateResponse> requestAggregates(String stocksTicker, int multiplier,
+                                                        String timespan, String from, String to,
+                                                        boolean adjusted, String sort, int limit,
+                                                        String apiKey);
 
     DailyResponse requestDaily(String date, boolean adjusted,
                                boolean includeOtc, String apiKey);
