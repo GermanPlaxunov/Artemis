@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gate-api.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" afterDir="false" />
+    <list default="true" id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="develop 0.2.4 --&gt; FeignClient response type changed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/AggregateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/AggregateResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/TradeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/response/TradeData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-polygon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataRequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataRequestSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorRequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorRequestSender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,24 +41,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;727755180c5555ff768869a4f8428bd0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "727755180c5555ff768869a4f8428bd0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean compile" />
@@ -141,8 +137,23 @@
       <option name="presentableId" value="Default" />
       <updated>1678131242344</updated>
       <workItem from="1678131243900" duration="4783000" />
-      <workItem from="1678224836560" duration="1102000" />
+      <workItem from="1678224836560" duration="3286000" />
     </task>
+    <task id="LOCAL-00001" summary="develop 0.2.3 --&gt; Polygon data saved.">
+      <created>1678226193454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678226193454</updated>
+    </task>
+    <task id="LOCAL-00002" summary="develop 0.2.3 --&gt; Polygon data saved.">
+      <created>1678226321766</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678226321766</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,5 +169,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Project Default" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="develop 0.2.3 --&gt; Polygon data saved." />
+    <MESSAGE value="develop 0.2.4 --&gt; FeignClient response type changed." />
+    <option name="LAST_COMMIT_MESSAGE" value="develop 0.2.4 --&gt; FeignClient response type changed." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

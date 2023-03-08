@@ -24,7 +24,7 @@ public class IndicatorRequestSender {
         var limit = request.getLimit();
         return client.requestSma(stockTicker, timestamp, timespan,
                 adjusted, window, seriesType, expandUnderlying,
-                order, limit, apiKey);
+                order, limit, apiKey).getBody();
     }
 
     public IndicatorResponse requestEma(PolygonIndicatorRequest request) {
@@ -39,7 +39,7 @@ public class IndicatorRequestSender {
         var limit = request.getLimit();
         return client.requestEma(stockTicker, timestamp, timespan,
                 adjusted, window, seriesType, expandUnderlying,
-                order, limit, apiKey);
+                order, limit, apiKey).getBody();
     }
 
     public IndicatorResponse requestMacd(PolygonIndicatorRequest request) {
@@ -55,8 +55,9 @@ public class IndicatorRequestSender {
         var order = request.getOrder();
         var limit = request.getLimit();
         return client.requestMacd(stockTicker, timestamp, timespan,
-                adjusted, shortWindow, longWindow, signalWindow,
-                seriesType, expandUnderlying, order, limit, apiKey);
+                        adjusted, shortWindow, longWindow, signalWindow,
+                        seriesType, expandUnderlying, order, limit, apiKey)
+                .getBody();
     }
 
     public IndicatorResponse requestRsi(PolygonIndicatorRequest request) {
@@ -71,6 +72,6 @@ public class IndicatorRequestSender {
         var limit = request.getLimit();
         return client.requestRsi(stockTicker, timestamp, timespan,
                 adjusted, window, seriesType, expandUnderlying,
-                order, limit, apiKey);
+                order, limit, apiKey).getBody();
     }
 }

@@ -33,19 +33,22 @@ public class DataRequestSender {
         var date = convertLocalDateTimeToString(request.getDate());
         var adjusted = request.getAdjusted();
         var includeOtc = request.getIncludeOtc();
-        return client.requestDaily(date, adjusted, includeOtc, apiKey);
+        return client.requestDaily(date, adjusted, includeOtc, apiKey)
+                .getBody();
     }
 
     public DailyOpenCloseResponse requestDailyOpenClose(PolygonDataRequest request) {
         var stockTicker = request.getStockTicker();
         var date = convertLocalDateTimeToString(request.getDate());
         var adjusted = request.getAdjusted();
-        return client.requestDailyOpenClose(stockTicker, date, adjusted, apiKey);
+        return client.requestDailyOpenClose(stockTicker, date, adjusted, apiKey)
+                .getBody();
     }
 
     public DailyPreviousClose requestPreviousOhlc(PolygonDataRequest request) {
         var stockTicker = request.getStockTicker();
         var adjusted = request.getAdjusted();
-        return client.requestPreviousDaily(stockTicker, adjusted, apiKey);
+        return client.requestPreviousDaily(stockTicker, adjusted, apiKey)
+                .getBody();
     }
 }
