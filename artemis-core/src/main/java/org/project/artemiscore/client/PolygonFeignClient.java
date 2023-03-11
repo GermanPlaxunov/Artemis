@@ -1,4 +1,4 @@
-package com.project.artemiscore.client;
+package org.project.artemiscore.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 

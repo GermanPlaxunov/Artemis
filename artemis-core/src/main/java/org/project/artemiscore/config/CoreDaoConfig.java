@@ -1,4 +1,4 @@
-package com.project.artemiscore.config;
+package org.project.artemiscore.config;
 
 import org.artemis.artemisdata.polygon.repository.EndOfDayRepository;
 import org.artemis.artemisdata.polygon.repository.IndicatorRepository;

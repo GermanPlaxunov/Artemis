@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="develop 0.2.4 --&gt; FeignClient response type changed.">
+      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/data/DataCompletenessVerifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/data/DataGapsCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/data/date/DateGapsCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/client/PolygonFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataRequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataRequestSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorRequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorRequestSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/ArtemisCoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/ArtemisCoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/client/PolygonClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/client/PolygonClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/client/PolygonFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/client/PolygonFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/config/CoreBeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/config/CoreBeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/config/CoreDaoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/config/CoreDaoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/core/processor/CoreProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/CoreProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/rest/CoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/rest/CoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/test/java/com/project/artemiscore/ArtemisCoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/test/java/org/project/artemiscore/ArtemisCoreApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/snipe/IdeaProjects/Artemis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,12 +82,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.gate-api | Request data from polygon">
+  <component name="RunManager" selected="JUnit.Coverage">
     <configuration name="gate-api | Request data from polygon" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gate-api.http" index="2" requestIdentifier="Request data from polygon" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="gate-api | Send POST request with json body" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gate-api.http" requestIdentifier="Send POST request with json body" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="Coverage" type="JUnit" factoryName="JUnit">
+      <module name="Artemis" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ArtemisCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="artemis-core" />
@@ -118,6 +138,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.gate-api | Request data from polygon" />
+      <item itemvalue="HTTP Request.gate-api | Send POST request with json body" />
+      <item itemvalue="JUnit.Coverage" />
+      <item itemvalue="Spring Boot.ArtemisCoreApplication" />
+      <item itemvalue="Spring Boot.ArtemisGateApplication" />
+      <item itemvalue="Spring Boot.ArtemisPolygonApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.gate-api | Request data from polygon" />
@@ -138,6 +166,9 @@
       <updated>1678131242344</updated>
       <workItem from="1678131243900" duration="4783000" />
       <workItem from="1678224836560" duration="3286000" />
+      <workItem from="1678287535217" duration="1296000" />
+      <workItem from="1678311336943" duration="510000" />
+      <workItem from="1678526796527" duration="1634000" />
     </task>
     <task id="LOCAL-00001" summary="develop 0.2.3 --&gt; Polygon data saved.">
       <created>1678226193454</created>
@@ -153,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678226321766</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="develop 0.2.4 --&gt; FeignClient response type changed.">
+      <created>1678287592446</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678287592446</updated>
+    </task>
+    <task id="LOCAL-00004" summary="develop 0.2.4 --&gt; FeignClient response type changed.">
+      <created>1678287616061</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678287616061</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

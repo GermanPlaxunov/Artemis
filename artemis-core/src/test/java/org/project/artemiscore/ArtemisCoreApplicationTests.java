@@ -1,4 +1,4 @@
-package com.project.artemiscore;
+package org.project.artemiscore;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

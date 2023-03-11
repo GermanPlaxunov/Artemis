@@ -1,10 +1,10 @@
-package com.project.artemiscore.rest;
+package org.project.artemiscore.rest;
 
-import com.project.artemiscore.core.processor.CoreProcessor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.artemis.artemismodel.task.AnalyzeDataTask;
 import org.artemis.artemismodel.task.UploadDataTask;
+import org.project.artemiscore.core.processor.CoreProcessor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

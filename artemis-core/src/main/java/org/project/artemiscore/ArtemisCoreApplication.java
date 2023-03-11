@@ -1,4 +1,4 @@
-package com.project.artemiscore;
+package org.project.artemiscore;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
