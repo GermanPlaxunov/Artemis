@@ -5,6 +5,7 @@ import org.artemis.artemisdata.polygon.repository.IndicatorRepository;
 import org.artemis.artemisdata.polygon.repository.UploadDataTaskRepository;
 import org.project.artemiscore.client.PolygonClient;
 import org.project.artemiscore.client.PolygonFeignClient;
+import org.project.artemiscore.core.builder.PolygonRequestBuilder;
 import org.project.artemiscore.core.processor.CoreProcessor;
 import org.project.artemiscore.core.processor.data.DataGapsCheck;
 import org.project.artemiscore.core.processor.data.date.DateGapsCheck;
@@ -25,8 +26,14 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class CoreBeansConfig {
 
     @Bean
-    public CoreProcessor coreProcessor(PolygonClient polygonClient) {
-        return new CoreProcessor(polygonClient);
+    public CoreProcessor coreProcessor(PolygonRequestBuilder polygonRequestBuilder,
+                                       PolygonClient polygonClient) {
+        return new CoreProcessor(polygonRequestBuilder, polygonClient);
+    }
+
+    @Bean
+    public PolygonRequestBuilder polygonRequestBuilder() {
+        return new PolygonRequestBuilder();
     }
 
     @Bean

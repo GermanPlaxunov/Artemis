@@ -5,6 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.artemis.artemiscommon.polygon.PolygonEndpoint;
 import org.artemis.artemismodel.polygon.PolygonDataRequest;
 import org.artemis.artemismodel.polygon.PolygonIndicatorRequest;
+import org.artemis.artemispolygon.processor.data.DataProvider;
+import org.artemis.artemispolygon.processor.data.IndicatorProvider;
 
 @Slf4j
 @RequiredArgsConstructor

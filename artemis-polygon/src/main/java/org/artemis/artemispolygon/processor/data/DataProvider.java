@@ -1,4 +1,4 @@
-package org.artemis.artemispolygon.processor;
+package org.artemis.artemispolygon.processor.data;
 
 import lombok.RequiredArgsConstructor;
 import org.artemis.artemiscommon.utils.DateUtils;

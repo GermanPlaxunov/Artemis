@@ -4,21 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="develop 0.2.4 --&gt; FeignClient response type changed.">
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/data/DataCompletenessVerifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/data/DataGapsCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/data/date/DateGapsCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" afterDir="false" />
+    <list default="true" id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="develop 0.2.6 --&gt; Core PolygonRequestBuilder init.">
+      <change afterPath="$PROJECT_DIR$/artemis-common/src/main/java/org/artemis/artemiscommon/polygon/PolygonEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/builder/PolygonRequestBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/exception/UnknownPolygonEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/rest/CoreRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/ArtemisCoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/ArtemisCoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/client/PolygonClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/client/PolygonClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/client/PolygonFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/client/PolygonFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/config/CoreBeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/config/CoreBeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/config/CoreDaoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/config/CoreDaoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/core/processor/CoreProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/CoreProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/com/project/artemiscore/rest/CoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/rest/CoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-core/src/test/java/com/project/artemiscore/ArtemisCoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/test/java/org/project/artemiscore/ArtemisCoreApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/client/PolygonClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/client/PolygonClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/client/PolygonFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/client/PolygonFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/config/CoreBeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/config/CoreBeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/CoreProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/core/processor/CoreProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/rest/CoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/java/org/project/artemiscore/rest/CoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-core/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-core/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/PolygonIndicatorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/polygon/PolygonIndicatorRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/task/AnalyzeDataTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/task/AnalyzeDataTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/task/UploadDataTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-model/src/main/java/org/artemis/artemismodel/task/UploadDataTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/config/PolygonBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/config/PolygonBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/data/DataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/DataRequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/data/DataRequestSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/data/IndicatorProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/IndicatorRequestSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/data/IndicatorRequestSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/PolygonProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/processor/PolygonProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/rest/PolygonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-polygon/src/main/java/org/artemis/artemispolygon/rest/PolygonController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,26 +59,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/snipe/IdeaProjects/Artemis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "727755180c5555ff768869a4f8428bd0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/snipe/IdeaProjects/Artemis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;727755180c5555ff768869a4f8428bd0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean compile" />
@@ -82,11 +91,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Coverage">
+  <component name="RunManager" selected="Spring Boot.ArtemisCoreApplication (1)">
     <configuration name="gate-api | Request data from polygon" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gate-api.http" index="2" requestIdentifier="Request data from polygon" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="gate-api | Send POST request with json body" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/gate-api.http" requestIdentifier="Send POST request with json body" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Coverage" type="JUnit" factoryName="JUnit">
@@ -95,6 +101,19 @@
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="directory" />
       <dir value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArtemisCoreApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="artemis-core" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.project.artemiscore.ArtemisCoreApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.project.artemiscore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +159,19 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.gate-api | Request data from polygon" />
-      <item itemvalue="HTTP Request.gate-api | Send POST request with json body" />
       <item itemvalue="JUnit.Coverage" />
+      <item itemvalue="Spring Boot.ArtemisCoreApplication (1)" />
       <item itemvalue="Spring Boot.ArtemisCoreApplication" />
       <item itemvalue="Spring Boot.ArtemisGateApplication" />
       <item itemvalue="Spring Boot.ArtemisPolygonApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ArtemisCoreApplication (1)" />
         <item itemvalue="HTTP Request.gate-api | Request data from polygon" />
         <item itemvalue="Spring Boot.ArtemisPolygonApplication" />
         <item itemvalue="Spring Boot.ArtemisGateApplication" />
         <item itemvalue="Spring Boot.ArtemisCoreApplication" />
-        <item itemvalue="HTTP Request.gate-api | Send POST request with json body" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +187,8 @@
       <workItem from="1678224836560" duration="3286000" />
       <workItem from="1678287535217" duration="1296000" />
       <workItem from="1678311336943" duration="510000" />
-      <workItem from="1678526796527" duration="1634000" />
+      <workItem from="1678526796527" duration="4106000" />
+      <workItem from="1678568004335" duration="1405000" />
     </task>
     <task id="LOCAL-00001" summary="develop 0.2.3 --&gt; Polygon data saved.">
       <created>1678226193454</created>
@@ -198,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678287616061</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="develop 0.2.5 --&gt; Date verifier added.">
+      <created>1678528841278</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678528841278</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,9 +247,14 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="develop 0.2.3 --&gt; Polygon data saved." />
     <MESSAGE value="develop 0.2.4 --&gt; FeignClient response type changed." />
-    <option name="LAST_COMMIT_MESSAGE" value="develop 0.2.4 --&gt; FeignClient response type changed." />
+    <MESSAGE value="develop 0.2.5 --&gt; Date verifier added." />
+    <MESSAGE value="develop 0.2.6 --&gt; Core PolygonRequestBuilder init." />
+    <option name="LAST_COMMIT_MESSAGE" value="develop 0.2.6 --&gt; Core PolygonRequestBuilder init." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Artemis$Coverage.ic" NAME="Coverage Coverage Results" MODIFIED="1678528625268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
