@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "upload_data_task")
+@Table(name = "upload_data_task", schema = "artemis")
 public class UploadDataTaskEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

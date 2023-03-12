@@ -11,7 +11,10 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="database" qname="postgres">
-            <node kind="schema" qname="artemis" />
+            <node kind="schema">
+              <name qname="artemis" />
+              <name qname="artemis-test" />
+            </node>
           </node>
         </introspection-scope>
       </schema-mapping>

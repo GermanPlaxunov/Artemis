@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "end_of_day")
+@Table(name = "end_of_day", schema = "artemis")
 public class EndOfDayEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "analyze_data_task")
+@Table(name = "analyze_data_task", schema = "artemis")
 public class AnalyzeDataTaskEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

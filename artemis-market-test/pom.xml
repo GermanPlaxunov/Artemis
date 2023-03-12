@@ -10,7 +10,7 @@
         <relativePath>../artemis-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>artemis-market</artifactId>
+    <artifactId>artemis-market-test</artifactId>
 
     <dependencies>
         <dependency>

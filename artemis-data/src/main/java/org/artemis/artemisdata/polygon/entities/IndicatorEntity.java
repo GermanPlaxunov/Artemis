@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "market_indicators_values")
+@Table(name = "market_indicators_values", schema = "artemis")
 public class IndicatorEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
