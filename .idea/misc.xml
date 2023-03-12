@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/artemis-polygon/pom.xml" />
         <option value="$PROJECT_DIR$/artemis-gate/pom.xml" />
         <option value="$PROJECT_DIR$/artemis-core/pom.xml" />
+        <option value="$PROJECT_DIR$/artemis-market/pom.xml" />
       </list>
     </option>
   </component>

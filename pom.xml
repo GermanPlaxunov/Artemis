@@ -18,6 +18,7 @@
         <module>artemis-gate</module>
         <module>artemis-core</module>
         <module>sonar-report</module>
+        <module>artemis-market</module>
     </modules>
 
 </project>
