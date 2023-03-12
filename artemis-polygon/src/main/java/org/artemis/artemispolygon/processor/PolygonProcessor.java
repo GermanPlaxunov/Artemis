@@ -5,6 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.artemis.artemiscommon.polygon.PolygonEndpoint;
 import org.artemis.artemismodel.polygon.PolygonDataRequest;
 import org.artemis.artemismodel.polygon.PolygonIndicatorRequest;
+import org.artemis.artemispolygon.processor.data.DataProvider;
+import org.artemis.artemispolygon.processor.data.IndicatorProvider;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -22,7 +24,7 @@ public class PolygonProcessor {
             case POLYGON_ENDPOINT_PREVIOUS_OHLC -> dataProvider.savePreviousDailyOhlc(request);
             default -> throw new RuntimeException(String.format("Unknown data request code: %s", type));
         };
-        log.info("Saved entities count: {}", request);
+        log.info("Saved entities count: {}", result);
     }
 
     public void processIndicatorRequest(PolygonIndicatorRequest request) {

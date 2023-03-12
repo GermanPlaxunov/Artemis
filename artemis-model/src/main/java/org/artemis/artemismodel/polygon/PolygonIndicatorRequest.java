@@ -6,10 +6,11 @@ import java.time.LocalDateTime;
 
 @Data
 public class PolygonIndicatorRequest {
+    private String indicatorName;
     /**
      * The kind of the request to choose
      * the correct endpoint.
-     * */
+     */
     private String requestType;
     /**
      * The ticker symbol for which to get

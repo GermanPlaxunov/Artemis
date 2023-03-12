@@ -1,11 +1,15 @@
 package org.artemis.artemismodel.polygon.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class AggregateResponse {
     /**
      * The exchange symbol that this item is traded under.

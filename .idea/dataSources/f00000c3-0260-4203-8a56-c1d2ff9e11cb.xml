@@ -3,9 +3,17 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.45">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>758</IntrospectionStateNumber>
+      <Grants>1||-9223372036854775808|c|G
+1||10|c|G
+1||10|C|G
+1||10|T|G
+4||-9223372036854775808|c|G
+4||10|c|G
+4||10|C|G
+4||10|T|G</Grants>
+      <IntrospectionStateNumber>779</IntrospectionStateNumber>
       <ServerVersion>15.2</ServerVersion>
-      <StartupTime>1677792156</StartupTime>
+      <StartupTime>1678278317</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -802,7 +810,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>758</IntrospectionStateNumber>
+      <IntrospectionStateNumber>779</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4246,7 +4254,7 @@ false Zulu
     </language>
     <schema id="261" parent="2" name="artemis">
       <Current>1</Current>
-      <IntrospectionStateNumber>758</IntrospectionStateNumber>
+      <IntrospectionStateNumber>779</IntrospectionStateNumber>
       <ObjectId>16562</ObjectId>
       <StateNumber>742</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4274,100 +4282,167 @@ false Zulu
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="266" parent="261" name="end_of_day_seq">
+    <sequence id="266" parent="261" name="analyze_data_task_seq">
+      <DasType>bigint|0s</DasType>
+      <ObjectId>16591</ObjectId>
+      <SequenceIdentity>null+50</SequenceIdentity>
+      <StateNumber>761</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="267" parent="261" name="end_of_day_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>16575</ObjectId>
       <SequenceIdentity>null+50</SequenceIdentity>
       <StateNumber>746</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="267" parent="261" name="market_indicators_values_seq">
+    <sequence id="268" parent="261" name="market_indicators_values_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>16576</ObjectId>
       <SequenceIdentity>null+50</SequenceIdentity>
       <StateNumber>747</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="268" parent="261" name="end_of_day">
+    <sequence id="269" parent="261" name="upload_data_task_seq">
+      <DasType>bigint|0s</DasType>
+      <ObjectId>16592</ObjectId>
+      <SequenceIdentity>null+50</SequenceIdentity>
+      <StateNumber>762</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="270" parent="261" name="analyze_data_task">
+      <ObjectId>16581</ObjectId>
+      <StateNumber>759</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="271" parent="261" name="end_of_day">
       <ObjectId>16563</ObjectId>
       <StateNumber>744</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="269" parent="261" name="market_indicators_values">
+    <table id="272" parent="261" name="market_indicators_values">
       <ObjectId>16568</ObjectId>
       <StateNumber>745</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="270" parent="268" name="id">
+    <table id="273" parent="261" name="upload_data_task">
+      <ObjectId>16586</ObjectId>
+      <StateNumber>760</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="274" parent="270" name="id">
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>759</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="275" parent="270" name="enabled">
+      <DasType>boolean|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>759</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="276" parent="270" name="interval">
+      <DasType>bigint|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>759</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="277" parent="270" name="symbol">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>759</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="278" parent="270" name="analyze_data_task_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16584</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>759</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="279" parent="270" name="analyze_data_task_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16585</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>759</StateNumber>
+      <UnderlyingIndexId>16584</UnderlyingIndexId>
+    </key>
+    <column id="280" parent="271" name="id">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>744</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="271" parent="268" name="close">
+    <column id="281" parent="271" name="close">
       <DasType>double precision|0s</DasType>
       <Position>2</Position>
       <StateNumber>744</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="272" parent="268" name="date">
+    <column id="282" parent="271" name="date">
       <DasType>timestamp(6)|0s</DasType>
       <Position>3</Position>
       <StateNumber>744</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="273" parent="268" name="high">
+    <column id="283" parent="271" name="high">
       <DasType>double precision|0s</DasType>
       <Position>4</Position>
       <StateNumber>744</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="274" parent="268" name="low">
+    <column id="284" parent="271" name="low">
       <DasType>double precision|0s</DasType>
       <Position>5</Position>
       <StateNumber>744</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="275" parent="268" name="open">
+    <column id="285" parent="271" name="open">
       <DasType>double precision|0s</DasType>
       <Position>6</Position>
       <StateNumber>744</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="276" parent="268" name="otc">
+    <column id="286" parent="271" name="otc">
       <DasType>boolean|0s</DasType>
       <Position>7</Position>
       <StateNumber>744</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <column id="277" parent="268" name="symbol">
+    <column id="287" parent="271" name="symbol">
       <DasType>varchar(255)|0s</DasType>
       <Position>8</Position>
       <StateNumber>744</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="278" parent="268" name="transactions_count">
+    <column id="288" parent="271" name="transactions_count">
       <DasType>bigint|0s</DasType>
       <Position>9</Position>
       <StateNumber>744</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="279" parent="268" name="volume">
+    <column id="289" parent="271" name="volume">
       <DasType>bigint|0s</DasType>
       <Position>10</Position>
       <StateNumber>744</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="280" parent="268" name="weighted_volume">
+    <column id="290" parent="271" name="weighted_volume">
       <DasType>double precision|0s</DasType>
       <Position>11</Position>
       <StateNumber>744</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <index id="281" parent="268" name="end_of_day_pkey">
+    <index id="291" parent="271" name="end_of_day_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16566</ObjectId>
@@ -4376,45 +4451,45 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="282" parent="268" name="end_of_day_pkey">
+    <key id="292" parent="271" name="end_of_day_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16567</ObjectId>
       <Primary>1</Primary>
       <StateNumber>744</StateNumber>
       <UnderlyingIndexId>16566</UnderlyingIndexId>
     </key>
-    <column id="283" parent="269" name="id">
+    <column id="293" parent="272" name="id">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>745</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="284" parent="269" name="date">
+    <column id="294" parent="272" name="date">
       <DasType>timestamp(6)|0s</DasType>
       <Position>2</Position>
       <StateNumber>745</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="285" parent="269" name="name">
+    <column id="295" parent="272" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
       <StateNumber>745</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="286" parent="269" name="symbol">
+    <column id="296" parent="272" name="symbol">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
       <StateNumber>745</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="287" parent="269" name="value">
+    <column id="297" parent="272" name="value">
       <DasType>double precision|0s</DasType>
       <Position>5</Position>
       <StateNumber>745</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <index id="288" parent="269" name="market_indicators_values_pkey">
+    <index id="298" parent="272" name="market_indicators_values_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16573</ObjectId>
@@ -4423,12 +4498,59 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="289" parent="269" name="market_indicators_values_pkey">
+    <key id="299" parent="272" name="market_indicators_values_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16574</ObjectId>
       <Primary>1</Primary>
       <StateNumber>745</StateNumber>
       <UnderlyingIndexId>16573</UnderlyingIndexId>
+    </key>
+    <column id="300" parent="273" name="id">
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>760</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="301" parent="273" name="data_interval">
+      <DasType>bigint|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>760</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="302" parent="273" name="enabled">
+      <DasType>boolean|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>760</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="303" parent="273" name="symbol">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>760</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="304" parent="273" name="task_interval">
+      <DasType>bigint|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>760</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="305" parent="273" name="upload_data_task_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16589</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>760</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="306" parent="273" name="upload_data_task_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16590</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>760</StateNumber>
+      <UnderlyingIndexId>16589</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

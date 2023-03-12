@@ -53,6 +53,16 @@
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.artemis</groupId>
+            <artifactId>artemis-data</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.artemis</groupId>
+            <artifactId>artemis-model</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -60,14 +70,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
