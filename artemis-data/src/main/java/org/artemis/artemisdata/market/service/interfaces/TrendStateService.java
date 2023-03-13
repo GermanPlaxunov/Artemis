@@ -14,4 +14,8 @@ public interface TrendStateService {
     void updateLongTrendTime(String symbol);
 
     void deleteBySymbol(String symbol);
+
+    void toggleShortTrend(String symbol);
+
+    void toggleLongTrend(String symbol);
 }

@@ -4,33 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="develop 0.3.1 --&gt; Artemis-market API init.">
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/market/entities/PriceGenerationEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/market/repositories/PriceGenerationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/market/service/classes/PriceGenerationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/market/service/interfaces/PriceGenerationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/config/MarketBeansConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/generator/EndOfDayGenerationData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/generator/EndOfDayGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/generator/TradeDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/generator/TrendToggler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artemis-market-test/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f00000c3-0260-4203-8a56-c1d2ff9e11cb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="6d461b2b-03a4-48f3-86c4-f0874eb884ad" name="Changes" comment="develop 0.3.2 --&gt; Trend dao added.">
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/market/entities/TradeDataEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/market/repositories/TradeDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/market/service/classes/TradeDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artemis-data/src/main/java/org/artemis/artemisdata/market/service/interfaces/TradeDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/src/main/java/org/artemis/artemismarket/ArtemisMarketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/ArtemisMarketApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/src/main/java/org/artemis/artemismarket/rest/MarketApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/rest/MarketApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/src/main/java/org/artemis/artemismarket/rest/MarketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/rest/MarketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artemis-market/src/test/java/org/artemis/artemismarket/ArtemisMarketApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/src/test/java/org/artemis/artemismarket/ArtemisMarketApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/generator/TradeDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/generator/TradeDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/generator/TrendToggler.java" beforeDir="false" afterPath="$PROJECT_DIR$/artemis-market-test/src/main/java/org/artemis/artemismarket/generator/TrendToggler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -68,29 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/snipe/IdeaProjects/Artemis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "19e64249785d939f5457b4d93eef9cbb",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/snipe/IdeaProjects/Artemis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;19e64249785d939f5457b4d93eef9cbb&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean compile" />
@@ -209,7 +190,8 @@
       <workItem from="1678311336943" duration="510000" />
       <workItem from="1678526796527" duration="4106000" />
       <workItem from="1678568004335" duration="1405000" />
-      <workItem from="1678632476259" duration="2352000" />
+      <workItem from="1678632476259" duration="4955000" />
+      <workItem from="1678640917149" duration="2452000" />
     </task>
     <task id="LOCAL-00001" summary="develop 0.2.3 --&gt; Polygon data saved.">
       <created>1678226193454</created>
@@ -253,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678630494119</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="develop 0.3.2 --&gt; Trend dao added.">
+      <created>1678637297026</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678637297026</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +271,8 @@
     <MESSAGE value="develop 0.2.5 --&gt; Date verifier added." />
     <MESSAGE value="develop 0.2.6 --&gt; Core PolygonRequestBuilder init." />
     <MESSAGE value="develop 0.3.1 --&gt; Artemis-market API init." />
-    <option name="LAST_COMMIT_MESSAGE" value="develop 0.3.1 --&gt; Artemis-market API init." />
+    <MESSAGE value="develop 0.3.2 --&gt; Trend dao added." />
+    <option name="LAST_COMMIT_MESSAGE" value="develop 0.3.2 --&gt; Trend dao added." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -40,4 +40,14 @@ public class TrendStateServiceImpl implements TrendStateService {
     public void deleteBySymbol(String symbol) {
         repository.deleteAllBySymbol(symbol);
     }
+
+    @Override
+    public void toggleShortTrend(String symbol) {
+        repository.toggleShortTrend(symbol);
+    }
+
+    @Override
+    public void toggleLongTrend(String symbol) {
+        repository.toggleLongTrend(symbol);
+    }
 }

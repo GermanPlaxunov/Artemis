@@ -17,5 +17,13 @@ public interface TrendStateRepository extends JpaRepository<TrendStateEntity, Lo
     @Query("update TrendStateEntity entity set entity.lastLongTrendChange = :newDate where entity.symbol = :symbol")
     void updateLongTrendChangeTime(@Param("symbol") String symbol, @Param("newDate") LocalDateTime newDate);
 
+    @Query("update TrendStateEntity entity set entity.isUpTrendShort = not(entity.isUpTrendShort) " +
+            "where entity.symbol = :symbol")
+    void toggleShortTrend(@Param("symbol") String symbol);
+
+    @Query("update TrendStateEntity entity set entity.isUpTrendLong = not(entity.isUpTrendLong)" +
+            "where entity.symbol = :symbol")
+    void toggleLongTrend(@Param("symbol") String symbol);
+
     void deleteAllBySymbol(String symbol);
 }
